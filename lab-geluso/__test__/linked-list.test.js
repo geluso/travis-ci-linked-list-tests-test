@@ -99,4 +99,8 @@ describe("LinkedList", ()=> {
     result = l5.contains(5);
     expect(l5.contains(5)).toBe(true);
   });
+
+  test("intentionally failing test to see Travis fail", ()=> {
+    expect(emptyList.contains(99)).toBe(true);
+  });
 });
