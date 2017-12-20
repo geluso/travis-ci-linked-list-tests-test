@@ -100,7 +100,9 @@ describe("LinkedList", ()=> {
     expect(l5.contains(5)).toBe(true);
   });
 
-  test("intentionally failing test to see Travis fail", ()=> {
-    expect(emptyList.contains(99)).toBe(true);
+  test("toggle to see Travis pass or fail", ()=> {
+    // false for passing test
+    // change to true to get test to intentionally fail
+    expect(emptyList.contains(99)).toBe(false);
   });
 });
