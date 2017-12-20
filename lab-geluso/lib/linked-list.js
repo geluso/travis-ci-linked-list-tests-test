@@ -33,7 +33,7 @@ class LinkedList {
     }
 
     var current = this.root;
-    while (current.next !== null) {
+    while (current.next) {
       current = current.next;
     }
     current.next = new ListNode(value);
